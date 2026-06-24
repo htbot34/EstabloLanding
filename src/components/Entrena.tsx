@@ -12,7 +12,7 @@ const BLOCKS: { icon: LucideIcon; title: string; body: string }[] = [
   {
     icon: MessagesSquare,
     title: 'Real-time Q&A',
-    body: 'Workers text or send a voice note and get an answer grounded in your SOPs, with the source cited — in seconds, in Spanish.',
+    body: 'Workers text or send a voice note and get an answer grounded in your SOPs, with the source cited. In seconds, in Spanish.',
   },
 ]
 
@@ -41,7 +41,7 @@ export function Entrena() {
           ))}
         </div>
 
-        {/* Voice beat — the audience is voice-preferring and low-literacy */}
+        {/* Voice beat. The audience is voice-preferring and low-literacy. */}
         <div className="mt-5 grid items-center gap-7 rounded-lg bg-evergreen px-6 py-8 text-white sm:px-10 md:grid-cols-2">
           <div>
             <p lang="es" className="text-2xl font-semibold tracking-tight sm:text-3xl">

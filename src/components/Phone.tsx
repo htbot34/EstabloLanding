@@ -85,7 +85,7 @@ function Meta({ from, time }: { from: From; time: string }) {
 }
 
 /**
- * The phone frame — the worker's surface of the hand-off. A device bezel wrapping
+ * The phone frame: the worker's surface of the hand-off. A device bezel wrapping
  * a WhatsApp-style thread in Spanish: a question, a grounded answer with a cited
  * source, and a voice exchange.
  */

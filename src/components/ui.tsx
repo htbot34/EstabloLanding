@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
 
 /**
- * Bilingual verb eyebrow used to label sections — the Spanish-first navigational
+ * Bilingual verb eyebrow used to label sections. The Spanish-first navigational
  * texture that replaces numbered section markers. Spanish leads (evergreen),
  * English glosses (muted), joined by a short ledger rule.
  */
@@ -47,7 +47,7 @@ const chipTones: Record<ChipTone, string> = {
   consent: 'border-evergreen/30 bg-white text-evergreen',
 }
 
-/** Mono chip — for FARM CE tags and the ALTA / BAJA / ACEPTO consent codes. */
+/** Mono chip for FARM CE tags and the ALTA / BAJA / ACEPTO consent codes. */
 export function Chip({
   children,
   tone = 'evergreen',

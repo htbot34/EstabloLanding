@@ -1,8 +1,8 @@
-# Establo — landing page
+# Establo landing page
 
 A single-page marketing site for **Establo**: a Spanish-first, WhatsApp-based SOP
 training and **FARM Animal Care v5** compliance tool for large dairies. The page is
-built around one idea — **the hand-off**: a casual Spanish WhatsApp message becomes a
+built around one idea, **the hand-off**: a casual Spanish WhatsApp message becomes a
 stamped FARM v5 continuing-education training record.
 
 Built with **Vite + React + TypeScript (strict) + Tailwind CSS**, icons from
@@ -103,10 +103,10 @@ src/
 
 ## Design system
 
-- **Color** — evergreen primary (`#1E5A41`), warm manila paper surfaces for the
+- **Color:** evergreen primary (`#1E5A41`), warm manila paper surfaces for the
   "document" side, warm off-white page background. WhatsApp green (`#DCF8C6`) is used
   only on worker chat bubbles.
-- **Type** — IBM Plex Sans for headings + body, IBM Plex Mono (with tabular numerals)
+- **Type:** IBM Plex Sans for headings + body, IBM Plex Mono (with tabular numerals)
   for every ID, timestamp, record number, herd count, and consent code.
 - Tokens live in `tailwind.config.js`; fonts are self-hosted via `@fontsource`.
 

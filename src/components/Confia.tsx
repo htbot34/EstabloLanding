@@ -7,7 +7,7 @@ const POINTS: { icon: LucideIcon; title: string; body: ReactNode }[] = [
   {
     icon: Ban,
     title: 'No invented answers.',
-    body: 'If it isn’t in your SOPs, it doesn’t guess — it routes the question to a supervisor.',
+    body: 'If it isn’t in your SOPs, it doesn’t guess. It routes the question to a supervisor.',
   },
   {
     icon: UserCheck,
@@ -28,7 +28,7 @@ const POINTS: { icon: LucideIcon; title: string; body: ReactNode }[] = [
   {
     icon: Stamp,
     title: 'A human signs off.',
-    body: 'Supervisors confirm completions — nothing rides on the bot alone.',
+    body: 'Supervisors confirm completions, so nothing rides on the bot alone.',
   },
 ]
 

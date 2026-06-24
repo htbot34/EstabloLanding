@@ -23,7 +23,7 @@ export function PilotForm() {
           </h2>
           <p className="mt-4 max-w-prose text-lg leading-relaxed text-muted">
             A two-week pilot. We set it up around your SOPs. You see exactly what your crew
-            uses — and what the audit pack looks like.
+            uses, and what the audit pack looks like.
           </p>
 
           <ul className="mt-8 space-y-3">

@@ -6,10 +6,10 @@ export function Hero() {
   return (
     <section id="top" className="relative scroll-mt-20 pb-16 pt-12 sm:pb-24 sm:pt-16">
       <div className="container-x">
-        {/* Enrolling badge — sits directly under the nav */}
+        {/* Enrolling badge, sits directly under the nav */}
         <span className="inline-flex items-center gap-2 rounded-full border border-evergreen/25 bg-evergreen/[0.06] py-1 pl-2 pr-3 text-xs font-medium text-evergreen">
           <span aria-hidden="true" className="h-1.5 w-1.5 rounded-full bg-evergreen" />
-          Now enrolling pilot dairies — Magic Valley
+          Now enrolling pilot dairies in the Magic Valley
         </span>
 
         <div className="mt-6 max-w-3xl">
@@ -18,8 +18,8 @@ export function Hero() {
             <span className="text-evergreen">training record</span>.
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">
-            Establo answers your workers over WhatsApp in Spanish — grounded only in your
-            dairy&rsquo;s own SOPs — and logs every exchange as FARM Animal Care v5
+            Establo answers your workers over WhatsApp in Spanish, grounded only in your
+            dairy&rsquo;s own SOPs, and logs every exchange as FARM Animal Care v5
             documentation.
           </p>
           <div className="mt-7">
@@ -30,7 +30,7 @@ export function Hero() {
           </div>
         </div>
 
-        {/* The dual-surface hand-off — the centerpiece */}
+        {/* The dual-surface hand-off, the centerpiece */}
         <figure className="mt-12 rounded-xl border border-paper-edge bg-white/50 p-5 shadow-sm sm:mt-14 sm:p-8 lg:p-10">
           <div className="flex flex-col items-center justify-center gap-5 lg:flex-row lg:items-stretch lg:gap-7">
             {/* Worker surface */}

@@ -2,7 +2,7 @@ import { Check, FileText } from 'lucide-react'
 import { Chip } from './ui'
 
 /**
- * The training-record card — the manager-side surface of the hand-off.
+ * The training-record card: the manager-side surface of the hand-off.
  * Same record content appears in the hero and again in the Documenta section,
  * because it is literally the same record crossing from the phone to the ledger.
  */

@@ -20,8 +20,8 @@ export function Documenta() {
 
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">
           Every answer, comprehension check, and supervisor sign-off is logged as a training
-          event mapped to a FARM Animal Care v5 CE area. Export the whole pack — letter, CSV,
-          and per-worker transcripts — in one click.
+          event mapped to a FARM Animal Care v5 CE area. Export the whole pack (letter, CSV,
+          and per-worker transcripts) in one click.
         </p>
 
         {/* The micro hand-off: one message becomes one record */}
@@ -78,7 +78,7 @@ export function Documenta() {
               <dl className="grid grid-cols-1 divide-y divide-paper-edge px-6 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
                 <SummaryStat label="Trabajadores" value="14" />
                 <SummaryStat label="Áreas CE cubiertas" value="5/5" />
-                <SummaryStat label="Periodo" value="2026-01 — 2026-06" />
+                <SummaryStat label="Periodo" value="2026-01 a 2026-06" />
               </dl>
 
               {/* CE area checklist */}
