@@ -32,10 +32,10 @@ const POINTS: { icon: LucideIcon; title: string; body: ReactNode }[] = [
   },
 ]
 
-const CONSENT_CODES: { code: string; es: string; en: string }[] = [
-  { code: 'ALTA', es: 'empezar', en: 'start' },
-  { code: 'BAJA', es: 'detener', en: 'stop' },
-  { code: 'ACEPTO', es: 'firmar el acuerdo', en: 'sign the agreement' },
+const CONSENT_CODES: { code: string; gloss: string }[] = [
+  { code: 'ALTA', gloss: 'start' },
+  { code: 'BAJA', gloss: 'stop' },
+  { code: 'ACEPTO', gloss: 'sign the agreement' },
 ]
 
 export function Confia() {
@@ -65,15 +65,13 @@ export function Confia() {
         {/* Consent vocabulary rendered as the mono codes workers actually text */}
         <div className="mt-10 rounded-lg border border-paper-edge bg-white p-5 sm:p-6">
           <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-muted">
-            <span lang="es">Consentimiento del trabajador</span> · Worker consent
+            Worker consent
           </p>
           <ul className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-6">
-            {CONSENT_CODES.map(({ code, es, en }) => (
+            {CONSENT_CODES.map(({ code, gloss }) => (
               <li key={code} className="flex items-center gap-2.5">
                 <Chip tone="consent">{code}</Chip>
-                <span className="text-sm text-muted">
-                  <span lang="es">{es}</span> · <span lang="en">{en}</span>
-                </span>
+                <span className="text-sm text-muted">{gloss}</span>
               </li>
             ))}
           </ul>

@@ -99,7 +99,7 @@ src/
     Documenta.tsx       # Document: the hand-off + exportable audit artifact
     Confia.tsx          # Trust: safeguards + ALTA / BAJA / ACEPTO consent codes
     PilotForm.tsx       # Formspree pilot-request form
-    Footer.tsx          # contact + "An Irrigant company"
+    Footer.tsx          # contact + founder
     ui.tsx              # small shared primitives (labels, chips, waveform)
 ```
 
@@ -114,4 +114,4 @@ src/
 
 ---
 
-An [Irrigant](https://irrigant.xyz) company.
+Built by Henry Turcotte.

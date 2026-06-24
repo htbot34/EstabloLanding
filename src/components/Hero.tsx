@@ -36,7 +36,7 @@ export function Hero() {
             {/* Worker surface */}
             <div className="flex w-full max-w-[340px] flex-col items-center">
               <SurfaceLabel icon={<MessageCircle aria-hidden="true" className="h-3.5 w-3.5" />}>
-                WhatsApp del trabajador
+                Worker&rsquo;s WhatsApp
               </SurfaceLabel>
               <Phone />
             </div>
@@ -51,7 +51,7 @@ export function Hero() {
             {/* Manager surface */}
             <div className="flex w-full max-w-[360px] flex-col items-center self-center">
               <SurfaceLabel icon={<FileText aria-hidden="true" className="h-3.5 w-3.5" />}>
-                Expediente FARM v5
+                FARM v5 record
               </SurfaceLabel>
               <RecordCard />
             </div>
@@ -76,7 +76,7 @@ function SurfaceLabel({
   return (
     <span className="mb-3 flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-[0.16em] text-muted">
       {icon}
-      <span lang="es">{children}</span>
+      <span>{children}</span>
     </span>
   )
 }

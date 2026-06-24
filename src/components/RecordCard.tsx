@@ -22,31 +22,31 @@ export function RecordCard({
       <div className="flex items-center justify-between gap-3 border-b border-paper-edge bg-paper-ink/[0.03] px-4 py-2.5">
         <span className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.16em] text-muted">
           <FileText aria-hidden="true" className="h-3.5 w-3.5" />
-          Registro de capacitación
+          Training record
         </span>
         <span className="font-mono text-[11px] text-muted">Establo</span>
       </div>
 
       <dl className="divide-y divide-paper-edge px-4">
-        <Row label="Trabajador" pad={rowPad}>
+        <Row label="Worker" pad={rowPad}>
           <span>Juan M.</span>
         </Row>
-        <Row label="Tema" pad={rowPad}>
-          <span lang="es">Salud de la ubre</span>
+        <Row label="Topic" pad={rowPad}>
+          <span>Udder health</span>
         </Row>
-        <Row label="Programa" pad={rowPad}>
+        <Row label="Program" pad={rowPad}>
           <Chip tone="evergreen">FARM v5 CE · Animal Care</Chip>
         </Row>
-        <Row label="Fecha" pad={rowPad} mono>
+        <Row label="Date" pad={rowPad} mono>
           2026-06-23 14:32
         </Row>
-        <Row label="Registro" pad={rowPad} mono>
+        <Row label="Record" pad={rowPad} mono>
           TRN-04821
         </Row>
-        <Row label="Estado" pad={rowPad}>
+        <Row label="Status" pad={rowPad}>
           <span className="inline-flex items-center gap-1.5 font-medium text-evergreen">
             <Check aria-hidden="true" className="h-4 w-4" strokeWidth={2.5} />
-            Registrado
+            Logged
           </span>
         </Row>
       </dl>

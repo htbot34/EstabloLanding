@@ -5,11 +5,11 @@ import { TextBubble } from './Phone'
 
 // The five FARM Animal Care v5 continuing-education areas this period's pack covers.
 const CE_AREAS = [
-  'Manejo del ganado',
-  'Salud de la ubre',
-  'Cuidado del recién nacido',
-  'Vacas no ambulatorias',
-  'Aptitud para transporte',
+  'Stockmanship',
+  'Udder health',
+  'Newborn calf care',
+  'Non-ambulatory cattle',
+  'Fitness for transport',
 ]
 
 export function Documenta() {
@@ -34,10 +34,10 @@ export function Documenta() {
               </TextBubble>
             </div>
 
-            {/* Connector with the Spanish transformation label */}
+            {/* Connector with the transformation label */}
             <div className="flex shrink-0 flex-col items-center gap-1.5">
-              <span lang="es" className="font-mono text-[11px] uppercase tracking-wide text-muted">
-                se registra como
+              <span className="font-mono text-[11px] uppercase tracking-wide text-muted">
+                logged as
               </span>
               <ArrowRight
                 aria-hidden="true"
@@ -64,10 +64,7 @@ export function Documenta() {
                   <p className="font-mono text-[11px] uppercase tracking-[0.16em] text-muted">
                     FARM Animal Care v5
                   </p>
-                  <h3 className="mt-1 text-lg font-semibold leading-snug">
-                    <span lang="es">Registro de Capacitación</span>{' '}
-                    <span className="text-muted">/ Training Record</span>
-                  </h3>
+                  <h3 className="mt-1 text-lg font-semibold leading-snug">Training Record</h3>
                 </div>
                 <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded bg-evergreen font-mono text-sm font-medium text-white">
                   E
@@ -76,9 +73,9 @@ export function Documenta() {
 
               {/* Ledger summary lines */}
               <dl className="grid grid-cols-1 divide-y divide-paper-edge px-6 sm:grid-cols-3 sm:divide-x sm:divide-y-0">
-                <SummaryStat label="Trabajadores" value="14" />
-                <SummaryStat label="Áreas CE cubiertas" value="5/5" />
-                <SummaryStat label="Periodo" value="2026-01 a 2026-06" />
+                <SummaryStat label="Workers" value="14" />
+                <SummaryStat label="CE areas covered" value="5/5" />
+                <SummaryStat label="Period" value="2026-01 to 2026-06" />
               </dl>
 
               {/* CE area checklist */}
@@ -88,12 +85,10 @@ export function Documenta() {
                     key={area}
                     className="flex items-center justify-between gap-3 border-b border-paper-edge/60 py-2 last:border-0"
                   >
-                    <span lang="es" className="text-sm">
-                      {area}
-                    </span>
+                    <span className="text-sm">{area}</span>
                     <span className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wide text-evergreen">
                       <Check aria-hidden="true" className="h-3.5 w-3.5" strokeWidth={2.5} />
-                      Cubierta
+                      Covered
                     </span>
                   </li>
                 ))}
@@ -103,13 +98,13 @@ export function Documenta() {
               <div className="flex flex-col gap-4 border-t border-paper-edge px-6 py-5 sm:flex-row sm:items-end sm:justify-between">
                 <div className="w-full max-w-[14rem]">
                   <div className="h-8 border-b border-paper-ink/40" />
-                  <p lang="es" className="mt-1.5 text-xs text-muted">
-                    Firma del supervisor
+                  <p className="mt-1.5 text-xs text-muted">
+                    Supervisor signature
                   </p>
                 </div>
                 <div className="flex items-center gap-2 self-start rounded-md border border-paper-edge bg-white px-3 py-2 text-evergreen sm:self-auto">
                   <Download aria-hidden="true" className="h-4 w-4" />
-                  <span className="text-sm font-medium">Exportar pack</span>
+                  <span className="text-sm font-medium">Export pack</span>
                   <span className="font-mono text-[11px] text-muted">PDF · CSV</span>
                 </div>
               </div>
@@ -128,7 +123,7 @@ export function Documenta() {
 function SummaryStat({ label, value }: { label: string; value: string }) {
   return (
     <div className="py-3 sm:px-4 sm:first:pl-0 sm:last:pr-0">
-      <dt lang="es" className="text-[11px] uppercase tracking-wide text-muted">
+      <dt className="text-[11px] uppercase tracking-wide text-muted">
         {label}
       </dt>
       <dd className="mt-0.5 font-mono text-sm tabular-nums">{value}</dd>

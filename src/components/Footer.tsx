@@ -2,21 +2,17 @@ export function Footer() {
   return (
     <footer className="border-t border-paper-edge bg-page">
       <div className="container-x flex flex-col gap-8 py-12 sm:flex-row sm:items-start sm:justify-between">
-        <div>
+        <div className="max-w-xs">
           <p className="font-sans text-lg font-semibold tracking-tight text-evergreen">Establo</p>
-          <a
-            href="https://irrigant.xyz"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-1 inline-block text-sm text-muted transition-colors hover:text-evergreen"
-          >
-            An Irrigant company
-          </a>
+          <p className="mt-1 text-sm text-muted">
+            Spanish-first SOP training and FARM Animal Care v5 records for dairies.
+          </p>
         </div>
 
         <address className="not-italic">
           <p className="text-sm font-medium text-paper-ink">Henry Turcotte</p>
-          <p className="mt-1">
+          <p className="text-sm text-muted">Founder, Establo</p>
+          <p className="mt-2">
             <a
               href="mailto:henrylachtur@gmail.com"
               className="text-sm text-muted transition-colors hover:text-evergreen"
