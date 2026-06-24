@@ -46,21 +46,20 @@ Formspree form; the form shows submitting, success, and inline error states.
 
 ### 2. GitHub Pages base path
 
-`base` in **`vite.config.ts`** controls the path the site is served from.
-
-- **Project page** (default): served at `https://<user>.github.io/EstabloLanding/`,
-  so `base` must be `'/EstabloLanding/'` (the repo name, with leading + trailing slash).
-  If you rename the repo, update this to match.
-- **Custom domain**: if you later attach a domain (e.g. `establo.ag`) via a `CNAME`,
-  change `base` to `'/'`.
+`base` in **`vite.config.ts`** is set to `'/'` because the site is served from the root of
+the custom domain **establo.xyz** (configured by **`public/CNAME`**, which Vite copies to
+`dist/CNAME` on every build so the domain persists across deploys):
 
 ```ts
-// TODO(Henry): GitHub Pages base path.
 export default defineConfig({
   plugins: [react()],
-  base: '/EstabloLanding/',
+  base: '/',
 })
 ```
+
+If you ever remove the custom domain and serve from the GitHub project page
+(`https://<user>.github.io/EstabloLanding/`) instead, set `base` back to `'/EstabloLanding/'`
+and delete `public/CNAME`.
 
 ---
 
@@ -69,13 +68,17 @@ export default defineConfig({
 The workflow at **`.github/workflows/deploy.yml`** builds and publishes the site on
 every push to `main`:
 
-1. Checks out the repo and installs pnpm + Node 20.
+1. Checks out the repo and installs pnpm + Node 22.
 2. Runs `pnpm install --frozen-lockfile` then `pnpm build`.
 3. Uploads `dist/` as a Pages artifact and deploys it with `actions/deploy-pages`.
 
 **One-time setup:** in the repo on GitHub, go to **Settings → Pages → Build and
 deployment → Source** and choose **GitHub Actions**. After the first push to `main`,
 the site publishes automatically; subsequent pushes redeploy it.
+
+**Custom domain:** the site serves from **establo.xyz**, set by **`public/CNAME`** (kept in
+the build output so it persists across deploys). The apex `A`/`AAAA` records point at GitHub
+Pages, and HTTPS is enforced under **Settings → Pages**.
 
 ---
 
