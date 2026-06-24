@@ -26,24 +26,23 @@ The two gate commands are `pnpm typecheck` and `pnpm build`; both must pass clea
 
 ---
 
-## Two things to set before it goes live
+## Configuration
 
-Both are marked in the source with a `// TODO(Henry):` comment.
+The Formspree form ID is already wired (see below). The one remaining configurable item,
+the GitHub Pages base path, is marked in the source with a `// TODO(Henry):` comment.
 
-### 1. Formspree form ID
+### 1. Formspree form ID (already wired)
 
-The pilot-request form posts to [Formspree](https://formspree.io). Create a form,
-copy its 8-character ID (the code at the end of the endpoint, e.g.
-`https://formspree.io/f/mzzgabcd` → `mzzgabcd`), and paste it into the `useForm`
-call in **`src/components/PilotForm.tsx`**:
+The pilot-request form posts to [Formspree](https://formspree.io) via `@formspree/react`,
+wired to the live form `xvzjzqgz` in **`src/components/PilotForm.tsx`**:
 
 ```ts
-// TODO(Henry): paste your real Formspree form ID below
-const [state, handleSubmit] = useForm('YOUR_FORMSPREE_ID')
+const [state, handleSubmit] = useForm('xvzjzqgz')
 ```
 
-Form submissions are emailed to the address on the Formspree form. The form shows a
-submitting state, a success confirmation, and a graceful inline error if the post fails.
+To point it at a different form, swap that ID for the code after `/f/` in your Formspree
+endpoint (`https://formspree.io/f/XXXXXXXX`). Submissions are emailed to the address on the
+Formspree form; the form shows submitting, success, and inline error states.
 
 ### 2. GitHub Pages base path
 

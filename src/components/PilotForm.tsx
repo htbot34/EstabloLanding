@@ -9,9 +9,9 @@ const inputClass =
 const labelClass = 'mb-1.5 block text-sm font-medium text-paper-ink'
 
 export function PilotForm() {
-  // TODO(Henry): paste your real Formspree form ID below (the 8-character code at the
-  // end of your form endpoint, e.g. https://formspree.io/f/mzzgabcd -> "mzzgabcd").
-  const [state, handleSubmit] = useForm('YOUR_FORMSPREE_ID')
+  // Formspree form ID (live endpoint: https://formspree.io/f/xvzjzqgz).
+  // To point at a different form, swap this for the code after /f/ in its endpoint.
+  const [state, handleSubmit] = useForm('xvzjzqgz')
 
   return (
     <section id="request-a-pilot" className="scroll-mt-20 bg-white/40 py-16 sm:py-24">
